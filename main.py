@@ -52,6 +52,8 @@ iso_map = {
 wins["Code"] = wins["Country"].map(iso_map)
 
 app = Dash(__name__)
+server = app.server
+
 app.title = "FIFA Soccer World Cup winners"
 
 app.layout = html.Div([
